@@ -1,0 +1,8 @@
+The two ways:
+1. We can add the file of database into server "bin" because the TechBlog is executing from there as well as the sqlite ".db" is not a databse but its actually file consists of data in RDBMS form of data. So, we really need to paste the file into server or we need to provide the fully qualifyied path.
+2. Give fully Qualifyied path like we did in techblog.
+
+Must not do that:
+Pasting driver in tomcat or add JAR in Depedencies will not work with such structure of SQLITE.
+
+The oracle will easly be accessed by tomcat without driver in tomcat lib and added JAR. The tomcat knows how to execute ORACLE and other size datatbases it have its own way to Impliment implicit JDBC, maybe we can override that JDBC but i havent dont that yet. 

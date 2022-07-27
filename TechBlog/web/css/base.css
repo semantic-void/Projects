@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/  
+/* 
+    Created on : Nov 2, 2021, 11:50:39 PM
+    Author     : Lenovo
+*/
+/*
+Used colors
+most dark: (Not used)#65499c
+dark: #9575cd
+mid: #e6ceff
+light: #f3e5f5
+*/
+
+body{
+    /*background-color: #e6ceff;*/ 
+}
+
+/*//ZigZagShape*/
+/* dosent work here because this file is unknown to the clip-path the clip-path might belongs to Bootstrap or jQuery
+.banner-background{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 73% 86%, 31% 100%, 0 94%, 0 0);        
+}*/
+
+.primary-background-nav{
+    background: #9575cd!important;
+}
+
+.primary-background-body{
+    background-color: #c7a4ff;
+}
+
+.articleColor{
+    background-color:#f3e5f5;
+}
+
+.btn-color{
+    background-color: #9575cd;
+    border-color: #ffcc80;
+    color:#ffcc80;
+}
+.btn-color:hover{
+    background: #ffcc80;
+    color: black;
+}.fa {
+
+}
+
+/*.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}*/
+

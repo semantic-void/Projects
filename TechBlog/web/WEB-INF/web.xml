@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">   
+    <!--Error pages work properly when declared on top-->
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorPage.jsp</location>
+    </error-page>
+  
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/ErrorPage.jsp</location>
+    </error-page>
+    <servlet>
+        <servlet-name>ErrorPage</servlet-name>
+        <jsp-file>/ErrorPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorPage</servlet-name>
+        <url-pattern>/ErrorPage</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.techblog.servlets.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+   
+    <servlet>
+        <servlet-name>LoginPage</servlet-name>
+        <jsp-file>/LoginPage.jsp</jsp-file>
+    </servlet>
+   
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.techblog.servlets.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginPage</servlet-name>
+        <url-pattern>/LoginPage</url-pattern>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterPage</servlet-name>
+        <jsp-file>/RegisterPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterPage</servlet-name>
+        <url-pattern>/RegisterPage</url-pattern>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+  
+    
+        
+
+  
+  
+    <servlet>
+        <servlet-name>ProfilePage</servlet-name>
+        <jsp-file>/ProfilePage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfilePage</servlet-name>
+        <url-pattern>/ProfilePage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowBlogPage</servlet-name>
+        <jsp-file>/ShowBlogPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowBlogPage</servlet-name>
+        <url-pattern>/ShowBlogPage</url-pattern>
+    </servlet-mapping>
+</web-app>
