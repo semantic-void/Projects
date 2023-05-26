@@ -1,0 +1,30 @@
+
+.primary-background-nav{
+    background: #7CB342!important;
+}
+
+.banner-background{
+    clip-path: polygon(50% 0%, 80% 0%, 100% 0, 110% 90%, 73% 86%, 31% 100%, 0 94%, 0 0);
+}
+
+.primary-background-nav{
+    background: #00897B!important;
+}
+
+.primary-background-body{
+    background-color: #00838F;
+}
+
+.articleColor{
+    background-color:#00838F;
+}
+
+.btn-color{
+    background-color: #00838F;
+    border-color: #ffcc80;
+    color:#ffcc80;
+}
+.btn-color:hover{
+    background: #ffcc80;
+    color: black;
+}
